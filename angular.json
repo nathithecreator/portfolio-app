@@ -37,7 +37,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/particles.js/particles.js",
+               "src/assets/particles-wrapper.js"
+            ]
           },
           "configurations": {
             "production": {

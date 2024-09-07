@@ -1,0 +1,609 @@
+body, html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  z-index: 2;
+  margin: 0;
+  top: 0;
+  padding: 0;
+  position: relative; 
+  background-color: #00004d;
+  justify-content: flex-start; 
+  overflow-x: hidden; 
+  width: 100%;
+  height: 100%;
+  left: 0;
+  margin-left: -60;
+}
+
+.headsection{
+  text-align: center;
+  margin-top: 90px;
+  color: white;
+}
+
+.heading{
+  font-size: 51px;
+  font-weight: bold;
+}
+
+.subheading{
+  font-size: 19px;
+  margin-top: -50px;
+  color: #868686;
+}
+
+.BasicInfo{
+  color: #fff; 
+  text-align: start; 
+  margin-top: 70px; 
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+
+.about {
+  position: relative;
+  width: 100vw;
+  height: 1200px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.words{
+  margin-top: 50px;
+  text-align: center; 
+  width: 800px; 
+  font-size: 16px;
+  color: white;
+  margin: 0 auto; /* Center the entire words section */
+}
+
+.paragraph{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto; /* This centers the div horizontally */
+}
+
+.BasicInfo {
+  color: #fff;
+  text-align: start;
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.titletopic{
+  color: #fff; 
+  font-size: 18px; 
+  font-weight: bold; 
+  margin-bottom: -1px; 
+  margin: 10px;
+}
+
+.detailtopic{
+  color: gray; 
+}
+
+.image-container {
+  height: 240px;
+  width: 300px;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* This centers the div horizontally */
+  text-align: center;
+  border-radius: 10px;
+}
+
+.projectimg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container2 {
+  height: 100px;
+  width: 100px;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* This centers the div horizontally */
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+
+.scrollimg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.heading, .subheading, .image-container, .BasicInfo, .paragraph {
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 1.6s ease, transform 2.6s ease;
+}
+
+.show-animate {
+  opacity: 1;
+  transform: translateY(0); 
+}
+
+.show-animate-p {
+  opacity: 1;
+  transform: translateY(-20px); 
+  transition: opacity 1.6s ease, transform 2.6s ease; 
+}
+
+@media (min-width: 340px) and (max-width: 365px){
+  
+  .about {
+    position: relative;
+    width: 100vw;
+    height: 1000px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+  .heading{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subheading{
+    font-size: 13px;
+    margin-top: -35px;
+    color: #868686;
+  }
+
+  .BasicInfo{
+    color: #fff; 
+    margin: 0 auto;
+    text-align: start; 
+    margin-top: 0px; 
+    display: flex; 
+    flex-wrap: wrap;
+    width: 250px;
+  }
+
+  .titletopic{
+    color: #fff; 
+    font-size: 10px; 
+    font-weight: bold; 
+    margin-bottom: -1px; 
+    margin: 3px;
+  }
+  
+
+  .image-container {
+    height: 141px;
+    width: 180px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .words{
+    margin-top: 130px;
+    text-align: center; 
+    width: 200px; 
+    font-size: 9px;
+    color: white;
+    margin: 0 auto; 
+  }
+
+  .paragraph{
+    margin: 50px auto;
+    font-size: 11px;
+    width: 270px;
+  }
+
+  .BasicInfo {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; 
+  }
+
+  .b1 {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .b1 p {
+    font-size: 16px; 
+    margin: 5px 10px; 
+  }
+
+  .b1 img {
+    margin-right: 10px; 
+  }
+
+  .b1 span {
+    font-size: 14px; 
+  }
+
+  .heading, .subheading, .image-container, .BasicInfo, .paragraph {
+    opacity: 1;
+    transform: translateY(20px); 
+    transition: opacity 1.6s ease, transform 2.6s ease;
+  }
+  
+  .show-animate {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+  
+  .show-animate-p {
+    opacity: 1;
+    transform: translateY(-20px); 
+    transition: opacity 1.6s ease, transform 2.6s ease; 
+  }
+
+  .image-container2 {
+    height: 70px;
+    width: 70px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 60px;
+  }
+  
+  .scrollimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 366px) and (max-width: 376px) 
+{
+  .about {
+    position: relative;
+    width: 100vw;
+    height: 1400px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+  .heading{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subheading{
+    font-size: 13px;
+    margin-top: -35px;
+    color: #868686;
+  }
+
+  .BasicInfo{
+    color: #fff; 
+    margin: 0 auto;
+    text-align: start; 
+    margin-top: 0px; 
+    display: flex; 
+    flex-wrap: wrap;
+    width: 250px;
+  }
+
+  .titletopic{
+    color: #fff; 
+    font-size: 10px; 
+    font-weight: bold; 
+    margin-bottom: -1px; 
+    margin: 3px;
+  }
+  
+
+  .image-container {
+    height: 141px;
+    width: 180px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .words{
+    margin-top: 130px;
+    text-align: center; 
+    width: 200px; 
+    font-size: 9px;
+    color: white;
+    margin: 0 auto; 
+  }
+
+  .paragraph{
+    margin: 50px auto;
+    font-size: 11px;
+    width: 270px;
+    margin-left: -30px;
+  }
+
+  .BasicInfo {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; 
+  }
+
+  .b1 {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .b1 p {
+    font-size: 16px; 
+    margin: 5px 10px; 
+  }
+
+  .b1 img {
+    margin-right: 10px; 
+  }
+
+  .b1 span {
+    font-size: 14px; 
+  }
+
+  .heading, .subheading, .image-container, .BasicInfo, .paragraph {
+    opacity: 1;
+    transform: translateY(20px); 
+    transition: opacity 1.6s ease, transform 2.6s ease;
+  }
+  
+  .show-animate {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+  
+  .show-animate-p {
+    opacity: 1;
+    transform: translateY(-20px); 
+    transition: opacity 1.6s ease, transform 2.6s ease; 
+  }
+
+  .image-container2 {
+    height: 70px;
+    width: 70px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 60px;
+  }
+  
+  .scrollimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 412px) {
+
+  .about {
+    position: relative;
+    width: 100vw;
+    height: 1490px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+  .heading{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subheading{
+    font-size: 15px;
+    margin-top: -25px;
+    color: #868686;
+  }
+  
+
+  .image-container {
+    height: 157px;
+    width: 200px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .words{
+    margin-top: 50px;
+    text-align: center; 
+    width: 330px; 
+    font-size: 14px;
+    color: white;
+    margin: 0 auto; /* Center the entire words section */
+  }
+
+  .BasicInfo {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .b1 {
+    width: 100%; /* Make each item take up full width */
+    margin-bottom: 20px; /* Add some space between items */
+  }
+
+  .b1 p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin: 5px 10px; /* Adjust margins for better spacing */
+  }
+
+  .b1 img {
+    margin-right: 10px; /* Space between the icon and text */
+  }
+
+  .b1 span {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media (min-width: 413px) and (max-width: 430px) {
+
+  .about {
+    position: relative;
+    width: 100vw;
+    height: 1480px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+  .heading{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subheading{
+    font-size: 15px;
+    margin-top: -25px;
+    color: #868686;
+  }
+  
+
+  .image-container {
+    height: 157px;
+    width: 200px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .words{
+    margin-top: 50px;
+    text-align: center; 
+    width: 330px; 
+    font-size: 14px;
+    color: white;
+    margin: 0 auto; /* Center the entire words section */
+  }
+
+  .BasicInfo {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .b1 {
+    width: 100%; /* Make each item take up full width */
+    margin-bottom: 20px; /* Add some space between items */
+  }
+
+  .b1 p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin: 5px 10px; /* Adjust margins for better spacing */
+  }
+
+  .b1 img {
+    margin-right: 10px; /* Space between the icon and text */
+  }
+
+  .b1 span {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media (min-width: 819px) and (max-width: 900px) {
+  
+  .about {
+    position: relative;
+    width: 100vw;
+    height: 1490px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+  .heading{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subheading{
+    font-size: 15px;
+    margin-top: -25px;
+    color: #868686;
+  }
+  
+
+  .image-container {
+    height: 157px;
+    width: 200px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .words{
+    margin-top: 50px;
+    text-align: center; 
+    width: 350px; 
+    font-size: 12px;
+    color: white;
+    margin: 0 auto; /* Center the entire words section */
+  }
+
+  .BasicInfo {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .b1 {
+    width: 100%; /* Make each item take up full width */
+    margin-bottom: 20px; /* Add some space between items */
+  }
+
+  .b1 p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin: 5px 10px; /* Adjust margins for better spacing */
+  }
+
+  .b1 img {
+    margin-right: 10px; /* Space between the icon and text */
+  }
+
+  .b1 span {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+  }
+}

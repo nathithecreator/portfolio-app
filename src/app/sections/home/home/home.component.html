@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NkosinathiSikhosana</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- count particles -->
+  <div class="count-particles">
+    <span class="js-count-particles">--</span> particles
+  </div>
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
+  <!-- Home content -->
+  <div class="home" >
+    <img class="nathi fadeIn delay1" src="../../../../assets/nathi.png"><br>
+    <br>
+    <h3 class="name fadeIn delay2" >Nkosinathi Sikhosana</h3>
+    <br>
+    <h4 class="jobtitle fadeIn delay3" >Software Engineer</h4>
+    <!-- <button style="background-color:rgb(0, 0, 66); color:rgb(255, 255, 255); border-radius: 20px; border: transparent; height: 40px; width: 160px; font-family: Plus Jakarta Sans;  justify-content: center; font-weight: bolder; margin-top: 20px; " class="downloadButton fadeIn delay3">Download Resume</button> -->
+    <button class="custom-button fadeIn delay3" (click)="downloadPdf()">
+      <span class="spinner"></span>
+      <span class="button-content">
+        Download Resume
+      </span>
+    </button>
+
+    <div class="image-containerDownResume" (click)="downloadPdf()">
+      <div class="light-effect">
+          <img src="../../../assets/DownResume.png" class="downloadResumeImg1">
+      </div>
+    </div>
+  
+    <br>
+    <br>
+    <br>
+    <div class="details fadeIn delay4">
+      <span class="details1">I am a AWS and Azure Certified Software Engineer <br> specialized in </span>
+      <span class="details2" >Java, C#, Javascript, Typescript and Python from South Africa</span> 
+    </div>
+    <br>
+   
+    
+      <p class="yeezy" > 
+        {{ currentDate | date:'yyyy-MM-dd HH:mm:ss.SS' }}
+      </p>
+      
+      <div class="image-container2" href="#skills">
+        <img src="../../../assets/gif/scroll4.gif"  class="scrollimg" href="#skills">
+      </div>
+  </div>
+  
+</body>
+</html>
+
+  <app-skills></app-skills>
+
+
+
+

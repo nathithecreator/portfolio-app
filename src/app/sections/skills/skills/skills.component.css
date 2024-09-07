@@ -1,0 +1,651 @@
+body, html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  z-index: 2;
+  margin: 0;
+  top: 0;
+  padding: 0;
+  margin-top: -10px;
+  position: relative; 
+  background-color: #00004d;
+  background-image: url('../../../../assets/b3.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  justify-content: flex-start; 
+  overflow-x: hidden; 
+  width: 100%;
+  height: 100%;
+  left: 0;
+  margin-left: -60;
+}
+
+.headsection{
+  text-align: center;
+  margin-top: 110px;
+  color: white;
+}
+
+.heading{
+  font-size: 51px;
+  font-weight: bold;
+}
+
+.subheading{
+  font-size: 19px;
+  margin-top: -50px;
+  color: #868686;
+}
+
+.heading, .subheading, .techsection, .ratingsSection {
+  opacity: 0;
+  transform: translateY(20px); /* Initial state */
+  transition: opacity 0.7s ease, transform 1.7s ease;
+}
+
+.show-animate {
+  opacity: 1;
+  transform: translateY(0); /* Final state */
+}
+
+
+.lg{
+  background-color: #fff; /* Adjust background color as desired */
+  border: 1px solid #ccc; /* Adjust border color as desired */
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer; /* Simulate button look */
+  width: 50px;
+}
+
+.skills {
+  position: relative;
+  width: 100vw;
+  height: 1700px;
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.techsection {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.triangle .row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.triangle .lg {
+  margin: 0 10px;
+  padding: 10px;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100px;
+  color: white;
+}
+
+.yeezy {
+  width: 200px; /* Ensure the width is fixed */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Prevent overflow */
+  display: inline-block; /* Maintain block-level properties */
+  text-align: center;
+  justify-content: center;
+}
+
+/* Skillbar styles */
+.skillbar {
+  margin: 20px 0;
+}
+
+.headtitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillbar-title {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.skillbar-percentage {
+  position: relative;
+  right: 0px;
+  color: #fff;
+}
+
+.skillbar-bar {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #696969;
+  border-radius: 5px;
+}
+
+.skillbar-fill {
+  height: 100%;
+  background-color: #f0d800;
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 10px;
+  color: white;
+  line-height: 30px; /* Adjust line-height to match the height of the skill bar */
+  transition: width 0.5s;
+}
+
+section .animate {
+  opacity: 0;
+  transition: 1s;
+  filter: blur(5px);
+}
+
+section.show-animate .animate {
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* .skillbar {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.skillbar.show-animate {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+.ratingsSection{
+  justify-content: center; 
+   margin-top: 160px;
+  text-align: center; 
+  width: 300px; 
+  font-size: 16px;
+  color: white;
+  margin: 0 auto; /* Center the entire words section */
+}
+
+ .image-container {
+  height: 400px;
+  width: 400px;
+  overflow: hidden; 
+  justify-content: center;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+  text-align: center;
+  border-radius: 200px;
+} 
+
+
+
+.projectimg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 30px 10px;
+  white-space: nowrap;
+  position: relative;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+  text-align: center;
+}
+
+.logos:before, .logos:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), #00004d);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), #00004d);
+}
+
+.logo_items {
+  display: inline-block;
+  animation: 95s slides infinite linear;
+}
+
+
+.logo_items img{
+  height: 100px;
+  margin-right: 70px;
+}
+
+@media (min-width: 374px) and (max-width: 409px){
+  body, html {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    z-index: 2;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    margin-top: -10px;
+    position: relative; 
+    background-color: #00004d;
+    background-image: url('../../../../assets/b7.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    justify-content: flex-start; 
+    overflow-x: hidden; 
+    width: 100%;
+    height: 100%;
+    left: 0;
+    margin-left: -60;
+  }
+
+  .skills {
+    position: relative;
+    width: 100vw;
+    height: 1500px;
+    -webkit-background-size: cover;
+    background-size:cover;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+  .heading{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subheading{
+    font-size: 15px;
+    margin-top: -25px;
+    color: #868686;
+    margin-bottom: 30px;
+  }
+
+  .ratingsSection{
+    justify-content: center; 
+     margin-top: 160px;
+    text-align: center; 
+    width: 250px; 
+    font-size: 16px;
+    color: white;
+    margin: 0 auto; /* Center the entire words section */
+  }
+
+  .techsection {
+    text-align: center;
+    margin-top: 150px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .triangle .lg {
+    margin: 0 8px;
+    padding: 8px;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 10px;
+    font-size: 9px;
+    width: 80px;
+    color: white;
+  }
+
+  .logos {
+    overflow: hidden;
+    padding: 15px 5px;
+    white-space: nowrap;
+    position: relative;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+  }
+  
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 120px;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), #00004d);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #00004d);
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 95s slides infinite linear;
+  }
+  
+  
+  .logo_items img{
+    height: 50px;
+    margin-right: 35px;
+  }
+
+  .image-container {
+    height: 250px;
+    width: 250px;
+    overflow: hidden; 
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+    border-radius: 200px;
+  } 
+  
+  .projectimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Phone Version design __________________________________________________________________________ */
+
+@media (min-width: 410px) and (max-width: 413px){
+  body, html {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    z-index: 2;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    margin-top: -10px;
+    position: relative; 
+    background-color: #00004d;
+    background-image: url('../../../../assets/b7.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    justify-content: flex-start; 
+    overflow-x: hidden; 
+    width: 100%;
+    height: 100%;
+    left: 0;
+    margin-left: -60;
+  }
+
+  .skills {
+    position: relative;
+    width: 100vw;
+    height: 1500px;
+    -webkit-background-size: cover;
+    background-size:cover;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+  .heading{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subheading{
+    font-size: 15px;
+    margin-top: -25px;
+    color: #868686;
+    margin-bottom: 30px;
+  }
+
+  .techsection {
+    text-align: center;
+    margin-top: 150px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .triangle .lg {
+    margin: 0 8px;
+    padding: 8px;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 10px;
+    font-size: 9px;
+    width: 80px;
+    color: white;
+  }
+
+  .logos {
+    overflow: hidden;
+    padding: 15px 5px;
+    white-space: nowrap;
+    position: relative;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+  }
+  
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 120px;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), #00004d);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #00004d);
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 95s slides infinite linear;
+  }
+  
+  
+  .logo_items img{
+    height: 50px;
+    margin-right: 35px;
+  }
+
+  .image-container {
+    height: 300px;
+    width: 300px;
+    overflow: hidden; 
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+    border-radius: 200px;
+  } 
+  
+  
+  
+  .projectimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+}
+
+@media(min-width: 414px) and (max-width:430px){
+  body, html {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    z-index: 2;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    margin-top: -10px;
+    position: relative; 
+    background-color: #00004d;
+    background-image: url('../../../../assets/b7.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    justify-content: flex-start; 
+    overflow-x: hidden; 
+    width: 100%;
+    height: 100%;
+    left: 0;
+    margin-left: -60;
+  }
+
+  .skills {
+    position: relative;
+    width: 100vw;
+    height: 1500px;
+    -webkit-background-size: cover;
+    background-size:cover;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+  .heading{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subheading{
+    font-size: 15px;
+    margin-top: -25px;
+    color: #868686;
+    margin-bottom: 30px;
+  }
+
+  .ratingsSection{
+    justify-content: center; 
+     margin-top: 160px;
+    text-align: center; 
+    width: 250px; 
+    font-size: 16px;
+    color: white;
+    margin: 0 auto; /* Center the entire words section */
+  }
+
+  .techsection {
+    text-align: center;
+    margin-top: 150px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .triangle .lg {
+    margin: 0 8px;
+    padding: 8px;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 10px;
+    font-size: 9px;
+    width: 80px;
+    color: white;
+  }
+
+  .logos {
+    overflow: hidden;
+    padding: 15px 5px;
+    white-space: nowrap;
+    position: relative;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+  }
+  
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 120px;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), #00004d);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #00004d);
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 95s slides infinite linear;
+  }
+  
+  
+  .logo_items img{
+    height: 50px;
+    margin-right: 35px;
+  }
+
+  .image-container {
+    height: 250px;
+    width: 250px;
+    overflow: hidden; 
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    text-align: center;
+    border-radius: 200px;
+  } 
+  
+  .projectimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 749px) {
+
+  
+}
+

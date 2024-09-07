@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap">
+</head>
+<body>
+  <div class="skills" id="skills">
+    
+    
+    <div class="headsection">
+      <p class="heading">Skills</p>
+      <p class="subheading">What I know and have worked with</p>
+    </div>
+    <div class="techsection" style="text-align: center;">
+      <div class="triangle" style="text-align: center;">
+        <div *ngFor="let row of getRows(); let i = index" class="row">
+          <div class="lg" *ngFor="let value of getRowValues(i)">
+            {{ value }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills" style="margin-top: 100px;">
+      
+    </div>
+
+    <div class="ratingsSection" >
+      <p class="subheading" style="text-align: center;">Programming Skills</p>
+      <div class="skillbar">
+        <div class="headtitle">
+          <div class="skillbar-title">Java</div>
+        <div class="skillbar-percentage">80%</div>
+      </div>
+        
+        <div class="skillbar-bar" data-percentage="80%">
+          <div class="skillbar-fill" style="width: 80%;"></div>
+        </div>
+      </div>
+
+      <div class="skillbar">
+        <div class="headtitle">
+          <div class="skillbar-title">React</div>
+          <div class="skillbar-percentage">70%</div>
+        </div>
+        
+        <div class="skillbar-bar" data-percentage="70%">
+          <div class="skillbar-fill" style="width: 70%;"></div>
+        </div>
+      </div>
+    
+      <div class="skillbar">
+        <div class="headtitle">
+          <div class="skillbar-title">Angular</div>
+          <div class="skillbar-percentage">70%</div>
+        </div>
+        
+        <div class="skillbar-bar" data-percentage="90%">
+          <div class="skillbar-fill" style="width: 90%;"></div>
+        </div>
+      </div>
+    
+      <div class="skillbar">
+        <div class="headtitle">
+          <div class="skillbar-title">JavaScript</div>
+          <div class="skillbar-percentage">70%</div>
+        </div>
+        
+        <div class="skillbar-bar" data-percentage="75%">
+          <div class="skillbar-fill" style="width: 75%;"></div>
+        </div>
+      </div>
+    
+      <div class="skillbar">
+        <div class="headtitle">
+          <div class="skillbar-title">C#</div>
+          <div class="skillbar-percentage">90%</div>
+        </div>
+        <div class="skillbar-bar" data-percentage="90%">
+          <div class="skillbar-fill" style="width: 90%;"></div>
+        </div>
+      </div>
+      
+      <div class="skillbar">
+        <div class="headtitle">
+          <div class="skillbar-title">Python</div>
+          <div class="skillbar-percentage">50%</div>
+        </div>
+        <div class="skillbar-bar" data-percentage="50%">
+          <div class="skillbar-fill" style="width: 50%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="logos" style="margin-top: 70px;">
+      
+        <div class="logo_items">
+      <img src="../../../../assets/awslogo.png">
+      <img src="../../../../assets/azurelogo.png">
+      <img src="../../../../assets/azurelogo2.png">
+      <img src="../../../../assets/terraformlogo.png">
+      <img src="../../../../assets/awslogo.png">
+      <img src="../../../../assets/azurelogo.png">
+      <img src="../../../../assets/azurelogo2.png">
+      <img src="../../../../assets/terraformlogo.png">
+      <img src="../../../../assets/awslogo.png">
+      <img src="../../../../assets/azurelogo.png">
+      <img src="../../../../assets/azurelogo2.png">
+      <img src="../../../../assets/terraformlogo.png">
+      <img src="../../../../assets/awslogo.png">
+      <img src="../../../../assets/azurelogo.png">
+      <img src="../../../../assets/azurelogo2.png">
+      <img src="../../../../assets/terraformlogo.png">
+      <img src="../../../../assets/awslogo.png">
+      <img src="../../../../assets/azurelogo.png">
+      <img src="../../../../assets/azurelogo2.png">
+      <img src="../../../../assets/terraformlogo.png">
+      <img src="../../../../assets/awslogo.png">
+      <img src="../../../../assets/azurelogo.png">
+      <img src="../../../../assets/azurelogo2.png">
+      <img src="../../../../assets/terraformlogo.png">
+      
+      </div>
+
+      <div class="logo_items">
+        <img src="../../../../assets/awslogo.png">
+        <img src="../../../../assets/azurelogo.png">
+        <img src="../../../../assets/azurelogo2.png">
+        <img src="../../../../assets/terraformlogo.png">
+        <img src="../../../../assets/awslogo.png">
+      <img src="../../../../assets/azurelogo.png">
+      <img src="../../../../assets/azurelogo2.png">
+      <img src="../../../../assets/terraformlogo.png">
+      <img src="../../../../assets/awslogo.png">
+      <img src="../../../../assets/azurelogo.png">
+      <img src="../../../../assets/azurelogo2.png">
+      <img src="../../../../assets/terraformlogo.png">
+      <img src="../../../../assets/awslogo.png">
+      <img src="../../../../assets/azurelogo.png">
+      <img src="../../../../assets/azurelogo2.png">
+      <img src="../../../../assets/terraformlogo.png">
+      <img src="../../../../assets/awslogo.png">
+      <img src="../../../../assets/azurelogo.png">
+      <img src="../../../../assets/azurelogo2.png">
+      <img src="../../../../assets/terraformlogo.png">
+      <img src="../../../../assets/awslogo.png">
+      <img src="../../../../assets/azurelogo.png">
+      <img src="../../../../assets/azurelogo2.png">
+      <img src="../../../../assets/terraformlogo.png">
+        
+        </div>
+      </div>
+
+    <div style="text-align: center; justify-content: center; margin-top: 70px;">
+      <p class="yeezy" style="text-align: center; color: white; width: 200px; font-family: 'Courier New', Courier, monospace; font-size: 11px;">
+        {{ currentDate | date:'yyyy-MM-dd HH:mm:ss.SS' }}
+      </p>
+    </div>
+
+    
+    <div class="image-container">
+      <img src="../../../../assets/gif/zzz.webp"  class="projectimg">
+    </div>
+
+     
+
+
+    
+  </div>
+</body>
+</html>
+
+
+
+<div id="projects">
+  <app-projects></app-projects>
+</div>
+
+<div id="about">
+  <app-about></app-about>
+</div>
+<div id="education">
+  <app-education></app-education>
+</div>
+<div id="footer">
+  <app-footer></app-footer>
+</div>
+
+
+

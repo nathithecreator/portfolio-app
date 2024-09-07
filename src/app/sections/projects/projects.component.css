@@ -1,0 +1,490 @@
+
+body, html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  z-index: 2;
+  margin: 0;
+  top: 0;
+  padding: 0;
+  margin-top: -10px;
+  position: relative; 
+  background-color: #00004d;
+  justify-content: flex-start; 
+  overflow-x: hidden; 
+  width: 100%;
+  height: 1240px;
+  left: 0;
+  margin-left: -60;
+}
+
+.image-container {
+  height: 250px;
+  width: 420px;
+  overflow: hidden; 
+  justify-content: center;
+  margin: 20px;
+}
+
+.projectimg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.pheadsection{
+  text-align: center;
+  color: white;
+}
+
+.works {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* This centers the div horizontally */
+  text-align: center;
+  flex-wrap: wrap; /* This enables the flex items to wrap to the next line */
+}
+
+
+.pro1 {
+  /* width: 700px; */
+  height: auto;
+  background-color: rgb(0, 0, 66);
+  border-color: aliceblue;
+  border-width: 4px;
+  border: white;
+  color: white;
+  box-shadow: 3px 3px 3px -1px #070913;
+  margin: 20px 0; /* Added y-axis margin */
+  padding-bottom: 1px;  
+  width: 460px; 
+  margin-right: 30px;
+}
+
+
+
+
+.about{
+  margin: 20px;
+  font-size: 6; 
+  margin-top: -19px; 
+  color:gray
+}
+
+.title{
+  margin: 20px;
+  font-size: 25px; 
+  font-weight: bold;
+  margin-top: -2px;
+}
+
+.heading{
+  font-size: 51px;
+  font-weight: bold;
+}
+
+.subheading{
+  font-size: 19px;
+  margin-top: -40px;
+  color: #868686;
+}
+
+.heading, .subheading {
+  opacity: 0;
+  transform: translateY(20px); /* Initial state for animation */
+  transition: opacity 1.6s ease, transform 1.6s ease;
+}
+
+.show-animate {
+  opacity: 1;
+  transform: translateY(0); /* Final state for animation */
+}
+
+
+
+.project {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size:cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.lg{
+  background-color: transparent; /* Adjust background color as desired */
+  border: 1px solid #ccc; /* Adjust border color as desired */
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer; /* Simulate button look */
+  width: 55px;
+}
+
+.techstacks{
+  margin: 20px;
+  justify-content: center;
+}
+
+.triangle .row {
+  display: flex;
+  margin: 5px 0;
+}
+
+.triangle .lg {
+  margin: 0 5px;
+  padding: 5px;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 5px;
+  font-size: 9px;
+  width: 49px;
+  color: white;
+}
+
+.image-container2 {
+  height: 100px;
+  width: 100px;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* This centers the div horizontally */
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.scrollimg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 374px) and (max-width: 411px){
+  body, html {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    z-index: 2;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    margin-top: -10px;
+    position: relative; 
+    background-color: #00004d;
+    justify-content: flex-start; 
+    overflow-x: hidden; 
+    width: 100%;
+    height: 1900px;
+    left: 0;
+    margin-left: -60;
+  }
+
+  .heading{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subheading{
+    font-size: 13px;
+    margin-top: -20px;
+    color: #868686;
+  }
+
+
+
+  .works {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto; /* This centers the div horizontally */
+    text-align: center;
+    flex-wrap: wrap; /* This enables the flex items to wrap to the next line */
+   
+  }
+  
+
+  .pro1 {
+    width: 270px;
+    height: auto; /* Allow height to adjust based on content */
+    margin: 10px auto; /* Center on the page with top and bottom margins */
+    padding: 20px;
+    margin-right: 60px;
+   
+  }
+
+  .image-container {
+    height: 142px; /*108*/
+    width: 251px; /*190*/
+    overflow: hidden; 
+    justify-content: center;
+    margin: 0px auto; 
+  }
+
+  .projectimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0; /* Add spacing around the title */
+  }
+
+  .about {
+    font-size: 12px;
+    margin-top: -10px; 
+    color: gray;
+    margin: 0 10px; /* Add horizontal margin for better readability */
+  }
+
+  .techstacks {
+    margin: 10px 0;
+    justify-content: center;
+  }
+
+  .triangle .row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+
+  .lg {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 7px;
+    cursor: pointer;
+    width: auto; 
+    font-size: 12px; /* Adjust font size for better readability on mobile */
+    margin: 5px; /* Add spacing between items */
+  }
+
+  .image-container2 {
+    height: 50px;
+    width: 50px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    transform: translateY(98%);
+  }
+  
+  .scrollimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 412px) and (max-width: 819px)
+{
+  body, html {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    z-index: 2;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    margin-top: -10px;
+    position: relative; 
+    background-color: #00004d;
+    justify-content: flex-start; 
+    overflow-x: hidden; 
+    width: 100%;
+    height: 2000px;
+    left: 0;
+    margin-left: -60;
+  }
+
+  .heading{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subheading{
+    font-size: 14px;
+    margin-top: -20px;
+    color: #868686;
+  }
+
+
+
+  .works {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto; /* This centers the div horizontally */
+    text-align: center;
+    flex-wrap: wrap; /* This enables the flex items to wrap to the next line */
+   
+  }
+  
+
+  .pro1 {
+    width: 300px;
+    height: auto; /* Allow height to adjust based on content */
+    margin: 10px auto; /* Center on the page with top and bottom margins */
+    padding: 20px;
+  }
+
+  .image-container {
+    height: 158px; /*108*/
+    width: 278px; /*190*/
+    overflow: hidden; 
+    justify-content: center;
+    margin: 0px auto; 
+  }
+
+  .projectimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0; /* Add spacing around the title */
+  }
+
+  .about {
+    font-size: 14px;
+    margin-top: -10px; 
+    color: gray;
+    margin: 0 10px; /* Add horizontal margin for better readability */
+  }
+
+  .techstacks {
+    margin: 10px 0;
+    justify-content: center;
+  }
+
+  .triangle .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow tech stack items to wrap */
+    justify-content: center; /* Center tech stack items */
+  }
+
+  .lg {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 7px;
+    cursor: pointer;
+    width: auto; /* Let the width adjust based on content */
+    font-size: 12px; /* Adjust font size for better readability on mobile */
+    margin: 5px; /* Add spacing between items */
+  }
+}
+
+@media (min-width: 820px) and (max-width: 900px) {
+  body, html {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    z-index: 2;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    margin-top: -10px;
+    position: relative; 
+    background-color: #00004d;
+    justify-content: flex-start; 
+    overflow-x: hidden; 
+    width: 100%;
+    height: 2000px;
+    left: 0;
+    margin-left: -60;
+  }
+
+  .heading{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subheading{
+    font-size: 14px;
+    margin-top: -20px;
+    color: #868686;
+  }
+
+
+
+  .works {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto; /* This centers the div horizontally */
+    text-align: center;
+    flex-wrap: wrap; /* This enables the flex items to wrap to the next line */
+   
+  }
+  
+
+  .pro1 {
+    width: 300px;
+    height: auto; /* Allow height to adjust based on content */
+    margin: 10px auto; /* Center on the page with top and bottom margins */
+    padding: 20px;
+  }
+
+  .image-container {
+    height: 158px; /*108*/
+    width: 278px; /*190*/
+    overflow: hidden; 
+    justify-content: center;
+    margin: 0px auto; 
+  }
+
+  .projectimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0; /* Add spacing around the title */
+  }
+
+  .about {
+    font-size: 14px;
+    margin-top: -10px; 
+    color: gray;
+    margin: 0 10px; /* Add horizontal margin for better readability */
+  }
+
+  .techstacks {
+    margin: 10px 0;
+    justify-content: center;
+  }
+
+  .triangle .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow tech stack items to wrap */
+    justify-content: center; /* Center tech stack items */
+  }
+
+  .lg {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 7px;
+    cursor: pointer;
+    width: auto; /* Let the width adjust based on content */
+    font-size: 12px; /* Adjust font size for better readability on mobile */
+    margin: 5px; /* Add spacing between items */
+  }
+
+}

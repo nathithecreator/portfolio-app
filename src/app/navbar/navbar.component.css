@@ -1,0 +1,109 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  z-index: 100;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -60px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255, 255, 255,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sections {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.nav-link {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #03bcf4,
+              0 0 20px #03bcf4,
+              0 0 20px #03bcf4,
+              0 0 20px #03bcf4,
+              0 0 20px #03bcf4;
+}
+
+
+body {
+  height: 100%;
+  margin: 0;
+  padding-top: 80px; /* Adjust this value based on the height of the navbar */
+}
+
+.navbar.scrolled {
+  top: 90px; /* Slide in when scrolled */
+}
+
+.nav-link.active {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #03bcf4,
+              0 0 20px #03bcf4,
+              0 0 20px #03bcf4,
+              0 0 20px #03bcf4,
+              0 0 20px #03bcf4;
+}
+
+
+
+@media (max-width: 480px) {
+
+  .navbar{
+    display: none;
+  }
+
+  
+  /* .navbar {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    z-index: 100;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255, 255, 255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link {
+    color: white;
+    padding: 3px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  } */
+}

@@ -1,0 +1,1325 @@
+/* Reset styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input, select {
+  vertical-align: middle;
+}
+li {
+  list-style: none;
+}
+
+/* Base styles */
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #111;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+canvas {
+  display: block;
+}
+
+/* Animation and particle styles */
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+.arrows {
+  animation: blink 80s infinite;
+}
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.delay1 { animation-delay: 0s; }
+.delay2 { animation-delay: 0.5s; }
+.delay3 { animation-delay: 1s; }
+.delay4 { animation-delay: 1.5s; }
+.delay5 { animation-delay: 2s; }
+.nathi { height: 200px; width: 200px; }
+@media only screen and (max-width: 768px) {
+  .nathi { height: 100px; width: 100px; }
+}
+
+/* Particle count styles */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+/* Particles.js container styles */
+#particles-js {
+  position: absolute;
+  width: 105%;
+  height: 105%;
+  background-color: #fff;
+  background-image: url('../../../../assets/8.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-left: -15px;
+  margin-top: -10px;
+}
+
+
+.nathi{
+  user-select: none; /* Standard */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  height: 200px; 
+  width: 200px;
+}
+
+.jobtitle{
+  color: white; 
+  font-size: 14px; 
+  font-family: Plus Jakarta Sans, sans-serif; 
+  font-weight: lighter; 
+  margin-top: 10px;
+}
+
+.name{
+  color:white; 
+  font-family: Plus Jakarta Sans; 
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+.image-containerDownResume{
+  display: none;
+}
+
+
+.home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  max-width: 700px;
+  text-align: center;
+}
+
+
+
+.details1{
+  color: white; 
+  font-size: 24px; 
+  font-family: Plus Jakarta Sans, sans-serif; 
+  margin-bottom: -50px; 
+  font-weight: bold; 
+  text-shadow: #000;
+}
+
+/* .details1 {
+  font-size: 25px; 
+  font-family: "Plus Jakarta Sans", sans-serif; 
+  margin-bottom: -50px; 
+  font-weight: 900; 
+  text-shadow: #000;
+  
+  background-image: linear-gradient(
+        to bottom,
+        rgb(255, 255, 255),
+        rgb(255, 255, 255),
+        rgb(255, 255, 255),
+        rgb(100, 100, 100)
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+} */
+
+
+.details2{
+  color: rgb(243, 185, 255); 
+  font-size: 24px; 
+  font-family: Plus Jakarta Sans, sans-serif; 
+  margin-top: 30px; 
+  font-weight: bold; 
+  text-shadow: #000;
+}
+
+/* Styles for skills component */
+app-skills {
+  position: absolute;
+  z-index: 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional background color for better visibility */
+  margin-top: 700px;
+  margin-left: -10px;
+  background-size: cover;
+}
+
+.yeezy {
+  width: 200px; /* Ensure the width is fixed */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Prevent overflow */
+  display: inline-block; /* Maintain block-level properties */
+  text-align: center;
+  justify-content: center;
+  margin-bottom: -40px;
+   color: white; 
+   font-family: 'Courier New', Courier, monospace; 
+   font-size: 11px;
+
+}
+
+.image-container2{
+  display: none;
+}
+
+.custom-button {
+  position: relative;
+  display: inline-flex;
+  height: 40px; /* 12 * 0.25rem */
+  width: 170px;
+  max-width: 15rem; /* 60 * 0.25rem */
+  margin-top: 19px; /* 10 * 0.25rem */
+  overflow: hidden;
+  border-radius: 10px; 
+  padding: 1px;
+  outline: none;
+  border: 2px solid black; /* Transparent border */
+}
+
+.spinner {
+  position: absolute;
+  inset: -1000%;
+  animation: spin 2s linear infinite;
+  background: conic-gradient(from 90deg at 50% 50%, #000855 0%, #0533ff 50%, #000855 100%);
+}
+
+.button-content {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; /* 8px */
+  background-color:rgb(0, 0, 26); /* slate-950 */
+  padding-left: 1.75rem; /* 7 * 0.25rem */
+  padding-right: 1.75rem; /* 7 * 0.25rem */
+  font-size: 11px;
+  font-weight: 500;
+  color: white;
+  backdrop-filter: blur(3rem);
+  gap: 1rem; /* 2 * 0.25rem */
+  margin-left: 1px;
+  
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (min-width: 340px) and (max-width: 365px) {
+  #particles-js {
+    position: absolute;
+    width: 100vh;
+    height: 105%;
+    background-color: #fff;
+    background-image: url('../../../../assets/phoneback.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    overflow-x: hidden !important;
+  }
+
+  .jobtitle{
+    color: white; 
+    font-size: 10px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    font-weight: lighter; 
+    margin-top: 5px;
+  }
+  
+  .name{
+    color:white; 
+    font-family: Plus Jakarta Sans; 
+    font-size: 14px; 
+    font-weight: bold;
+  }
+
+  .home {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 250px;
+    margin-left: -25px;
+    text-align: center;
+  }
+
+  app-skills {
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background color for better visibility */
+    margin-top: 790px;
+    margin-left: -8px;
+    background-size: cover;
+    width: 440px;
+  }
+
+
+  .nathi{
+    height: 120px;
+    width: 120px;
+  }
+
+  .custom-button {
+    position: relative;
+    display: inline-flex;
+    height: 32px; /* 12 * 0.25rem */
+    width: 136px;
+    max-width: 15rem; /* 60 * 0.25rem */
+    margin-top: 15px; /* 10 * 0.25rem */
+    overflow: hidden;
+    border-radius: 10px; 
+    padding: 1px;
+    outline: none;
+    border: 2px solid black; /* Transparent border */
+  }
+  
+  .spinner {
+    position: absolute;
+    inset: -1000%;
+    animation: spin 2s linear infinite;
+    background: conic-gradient(from 90deg at 50% 50%, #000855 0%, #0533ff 50%, #000855 100%);
+  }
+  
+  .button-content {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* 8px */
+    background-color:rgb(0, 0, 26); /* slate-950 */
+    padding-left: 1.75rem; /* 7 * 0.25rem */
+    padding-right: 1.75rem; /* 7 * 0.25rem */
+    font-size: 7px;
+    font-weight: 500;
+    color: white;
+    backdrop-filter: blur(3rem);
+    gap: 1rem; /* 2 * 0.25rem */
+    margin-left: 1px;
+    
+  }
+  
+
+  .yeezy {
+    width: 120px; /* Ensure the width is fixed */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Prevent overflow */
+    display: inline-block; /* Maintain block-level properties */
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .details1{
+    color: white; 
+    font-size: 12px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-bottom: -50px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  .details2{
+    color: rgb(243, 185, 255); 
+    font-size: 12px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-top: 20px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  
+
+  .image-container2 {
+    height: 50px;
+    width: 50px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    transform: translateY(98%);
+  }
+  
+  .scrollimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+  }
+
+}
+
+ /* ------------------------------------smallest phone - iPhone SE -------------------------------*/
+@media (min-width: 366px) and (max-width: 376px) {
+  #particles-js {
+    position: absolute;
+    width: 100vh;
+    height: 105%;
+    background-color: #fff;
+    background-image: url('../../../../assets/phoneback.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    overflow-x: hidden !important;
+  }
+
+  .custom-button {
+    display:none;
+  }
+
+  .button-content{
+    display: none;
+  }
+
+  .image-containerDownResume{
+    height: 40px;
+    width: 170px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto; 
+    text-align: center;
+  }
+
+  .downloadResumeImg1{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+
+  .jobtitle{
+    color: white; 
+    font-size: 10px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    font-weight: lighter; 
+    margin-top: 5px;
+  }
+  
+  .name{
+    color:white; 
+    font-family: Plus Jakarta Sans; 
+    font-size: 17px; 
+    font-weight: bold;
+  }
+
+  .home {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 250px;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  app-skills {
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background color for better visibility */
+    margin-top: 700px;
+    margin-left: -8px;
+    background-size: cover;
+    width: 440px;
+  }
+
+
+  .nathi{
+    height: 150px;
+    width: 150px;
+  }
+  
+
+  .yeezy {
+    width: 160px; /* Ensure the width is fixed */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Prevent overflow */
+    display: inline-block; /* Maintain block-level properties */
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .details{
+    margin-top: -50px;
+  }
+
+  .details1{
+    color: white; 
+    font-size: 18px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-top: -300px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  .details2{
+    color: rgb(243, 185, 255); 
+    font-size: 18px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-top: 0px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  
+
+  .image-container2 {
+    height: 50px;
+    width: 50px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    transform: translateY(98%);
+  }
+  
+  .scrollimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+  }
+
+}
+
+@media (min-width: 377px) and (max-width: 395px) {
+  #particles-js {
+    position: absolute;
+    width: 109%;
+    height: 105%;
+    background-color: #fff;
+    background-image: url('../../../../assets/phoneback.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    overflow-x: hidden !important;
+  }
+
+  .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    max-width: 700px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  app-skills {
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background color for better visibility */
+    margin-top: 886px;
+    margin-left: -8px;
+    background-size: cover;
+    width: 440px;
+  }
+
+
+  .nathi{
+    height: 200px;
+    width: 200px;
+  }
+
+  
+  .custom-button {
+    display:none;
+  }
+
+  .button-content{
+    display: none;
+  }
+
+  .image-containerDownResume{
+    height: 40px;
+    width: 170px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto; 
+    text-align: center;
+  }
+
+  .downloadResumeImg1{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .spinner {
+    position: absolute;
+    inset: -1000%;
+    animation: spin 2s linear infinite;
+    background: conic-gradient(from 90deg at 50% 50%, #000855 0%, #0533ff 50%, #000855 100%);
+  }
+  
+  .button-content {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* 8px */
+    background-color:rgb(0, 0, 26); /* slate-950 */
+    padding-left: 1.75rem; /* 7 * 0.25rem */
+    padding-right: 1.75rem; /* 7 * 0.25rem */
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
+    backdrop-filter: blur(3rem);
+    gap: 1rem; /* 2 * 0.25rem */
+    margin-left: 1px;
+    
+  }
+  
+
+  .yeezy {
+    width: 200px; /* Ensure the width is fixed */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Prevent overflow */
+    display: inline-block; /* Maintain block-level properties */
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .details{
+    margin-top: -50px;
+  }
+
+  .details1{
+    color: white; 
+    font-size: 22px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-bottom: -50px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  .details2{
+    color: rgb(243, 185, 255); 
+    font-size: 22px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-top: 30px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 310px;
+    text-align: center;
+  }
+
+  .image-container2 {
+    height: 100px;
+    width: 100px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    transform: translateY(98%);
+  }
+  
+  .scrollimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+  }
+
+}
+
+/* When the width for phone */
+@media (min-width: 396px) and (max-width: 412px) {
+  #particles-js {
+    position: absolute;
+    width: 109%;
+    height: 105%;
+    background-color: #fff;
+    background-image: url('../../../../assets/phoneback.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    overflow-x: hidden !important;
+  }
+
+  .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    max-width: 700px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  app-skills {
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background color for better visibility */
+    margin-top: 940px;
+    margin-left: -8px;
+    background-size: cover;
+    width: 440px;
+  }
+
+  .details{
+    margin-top: -50px;
+  }
+
+  .image-containerDownResume{
+    height: 40px;
+    width: 170px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto; 
+    text-align: center;
+  }
+
+  .downloadResumeImg1{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .nathi{
+    height: 200px;
+    width: 200px;
+  }
+
+  /* .custom-button {
+    position: relative;
+    display: inline-flex;
+    height: 40px;
+    width: 170px;
+    max-width: 15rem; 
+    margin-top: 19px;
+    overflow: hidden;
+    border-radius: 10px; 
+    padding: 1px;
+    outline: none;
+    border: 2px solid black; 
+  } */
+
+  .custom-button {
+    display:none;
+  }
+  
+  .spinner {
+    position: absolute;
+    inset: -1000%;
+    animation: spin 2s linear infinite;
+    background: conic-gradient(from 90deg at 50% 50%, #000855 0%, #0533ff 50%, #000855 100%);
+  }
+  
+  .button-content {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 26); 
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    font-size: 11px; 
+    font-weight: 500;
+    color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    transform: translateZ(0);
+    gap: 1rem;
+    margin-left: 1px;
+    backdrop-filter: none; 
+    -webkit-backdrop-filter: none;
+}
+
+  .yeezy {
+    width: 200px; 
+    white-space: nowrap;
+    overflow: hidden; 
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .details1{
+    color: white; 
+    font-size: 22px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-bottom: -100px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  .details2{
+    color: rgb(243, 185, 255); 
+    font-size: 22px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-top: 0px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 310px;
+    text-align: center;
+  }
+
+  .image-container2 {
+    height: 100px;
+    width: 100px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    transform: translateY(98%);
+  }
+  
+  .scrollimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+  }
+
+}
+
+@media (min-width: 819px) and (max-width: 900px) {
+  #particles-js {
+    background-image: url('../../../../assets/tablet.png') !important;
+  }
+
+  app-skills {
+    position: absolute !important;
+    z-index: 0 !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    margin-top: 740px !important;
+    margin-left: -8px !important;
+    background-size: cover !important;
+    width: 100vw !important;
+  }
+}
+
+/* When the width for tablet */
+@media (min-width: 431px) and (max-width: 749px) {
+  #particles-js {
+    background-image: url('../../../../assets/tablet.png');
+  }
+
+  .nathi{
+    height: 140px;
+    width: 140px;
+  }
+
+  .details1{
+    color: white; 
+    font-size: 20px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-bottom: -50px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+}
+
+
+/* iPhone 14 pro max and iPhone XR 430px - 414px*/
+@media (min-width: 413px) and (max-width: 430px) {
+  #particles-js {
+    position: absolute;
+    width: 109%;
+    height: 105%;
+    background-color: #fff;
+    background-image: url('../../../../assets/phoneback.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    overflow-x: hidden !important;
+  }
+
+  .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    max-width: 700px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  app-skills {
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background color for better visibility */
+    margin-top: 940px;
+    margin-left: -8px;
+    background-size: cover;
+    width: 440px;
+  }
+
+  .details{
+    margin-top: -50px;
+  }
+
+  .image-containerDownResume{
+    height: 40px;
+    width: 170px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto; 
+    text-align: center;
+  }
+
+  .downloadResumeImg1{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .nathi{
+    height: 200px;
+    width: 200px;
+  }
+
+  /* .custom-button {
+    position: relative;
+    display: inline-flex;
+    height: 40px;
+    width: 170px;
+    max-width: 15rem; 
+    margin-top: 19px;
+    overflow: hidden;
+    border-radius: 10px; 
+    padding: 1px;
+    outline: none;
+    border: 2px solid black; 
+  } */
+
+  .custom-button {
+    display:none;
+  }
+  
+  .spinner {
+    position: absolute;
+    inset: -1000%;
+    animation: spin 2s linear infinite;
+    background: conic-gradient(from 90deg at 50% 50%, #000855 0%, #0533ff 50%, #000855 100%);
+  }
+  
+  .button-content {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 26); 
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    font-size: 11px; 
+    font-weight: 500;
+    color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    transform: translateZ(0);
+    gap: 1rem;
+    margin-left: 1px;
+    backdrop-filter: none; 
+    -webkit-backdrop-filter: none;
+}
+
+  .yeezy {
+    width: 200px; 
+    white-space: nowrap;
+    overflow: hidden; 
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .details1{
+    color: white; 
+    font-size: 22px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-bottom: -100px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  .details2{
+    color: rgb(243, 185, 255); 
+    font-size: 22px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-top: 0px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 310px;
+    text-align: center;
+  }
+
+  .image-container2 {
+    height: 100px;
+    width: 100px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    transform: translateY(98%);
+  }
+  
+  .scrollimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+  }
+
+}
+
+
+@media (min-width: 750px) and (max-width: 818px) {
+ 
+
+  #particles-js {
+    background-image: url('../../../../assets/tablet.png');
+  }
+
+  app-skills {
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.8); 
+    margin-top: 1040px;
+    margin-left: -8px;
+    background-size: cover;
+    width: 100vw;
+    
+  }
+
+  .custom-button {
+    display:none;
+  }
+
+  .button-content{
+    display: none;
+  }
+
+  .image-containerDownResume{
+    height: 40px;
+    width: 170px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto; 
+    text-align: center;
+  }
+
+  .downloadResumeImg1{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .details{
+    margin-top: -40px;
+  }
+}
+
+@media (min-height: 1200px) {
+  /* Your CSS rules here */
+  #particles-js {
+    background-image: url('../../../../assets/tablet.png');
+  }
+
+  app-skills {
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background color for better visibility */
+    margin-top: 1540px;
+    margin-left: -8px;
+    background-size: cover;
+    width: 100vw;
+    
+  }
+
+  .image-container2 {
+    height: 150px;
+    width: 150px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    transform: translateY(98%);
+  }
+  
+  .scrollimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+  }
+
+  
+  .nathi{
+    user-select: none; /* Standard */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    height: 300px; 
+    width: 300px;
+  }
+  
+  .jobtitle{
+    color: white; 
+    font-size: 19px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    font-weight: lighter; 
+    margin-top: 10px;
+  }
+  
+  .name{
+    color:white; 
+    font-family: Plus Jakarta Sans; 
+    font-size: 28px; 
+    font-weight: bold;
+  }
+
+  .yeezy {
+    width: 400px; /* Ensure the width is fixed */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Prevent overflow */
+    display: inline-block; /* Maintain block-level properties */
+    text-align: center;
+    justify-content: center;
+    margin-bottom: -40px;
+    color: white; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 19px;
+  
+  }
+
+
+.home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width:100%;
+  text-align: center;
+}
+
+.details{
+  margin-top: -50px;
+}
+
+.details1{
+  color: white; 
+  font-size: 30px; 
+  font-family: Plus Jakarta Sans, sans-serif; 
+  margin-bottom: -50px; 
+  font-weight: bold; 
+  text-shadow: #000;
+}
+
+
+
+
+.details2{
+  color: rgb(243, 185, 255); 
+  font-size: 30px; 
+  font-family: Plus Jakarta Sans, sans-serif; 
+  margin-top: 30px; 
+  font-weight: bold; 
+  text-shadow: #000;
+}
+
+.custom-button {
+  display:none;
+}
+
+.button-content{
+  display: none;
+}
+
+.image-containerDownResume{
+  height: 40px;
+  width: 170px;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto; 
+  text-align: center;
+}
+
+.downloadResumeImg1{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+}
+
+
+
+
