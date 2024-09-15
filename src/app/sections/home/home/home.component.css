@@ -226,6 +226,7 @@ app-skills {
   margin-top: 700px;
   margin-left: -10px;
   background-size: cover;
+  width: 100vw;
 }
 
 .yeezy {
@@ -353,11 +354,15 @@ app-skills {
     width: 120px;
   }
 
+  .image-containerDownResume{
+    display: none;
+  }
+
   .custom-button {
     position: relative;
     display: inline-flex;
-    height: 32px; /* 12 * 0.25rem */
-    width: 136px;
+    height: 40px; /* 12 * 0.25rem */
+    width: 170px;
     max-width: 15rem; /* 60 * 0.25rem */
     margin-top: 15px; /* 10 * 0.25rem */
     overflow: hidden;
@@ -381,18 +386,22 @@ app-skills {
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    border-radius: 10px; /* 8px */
-    background-color:rgb(0, 0, 26); /* slate-950 */
-    padding-left: 1.75rem; /* 7 * 0.25rem */
-    padding-right: 1.75rem; /* 7 * 0.25rem */
-    font-size: 7px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 26); 
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    font-size: 11px; 
     font-weight: 500;
     color: white;
-    backdrop-filter: blur(3rem);
-    gap: 1rem; /* 2 * 0.25rem */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    transform: translateZ(0);
+    gap: 1rem;
     margin-left: 1px;
-    
-  }
+    backdrop-filter: none; 
+    -webkit-backdrop-filter: none;
+}
+
   
 
   .yeezy {
@@ -464,22 +473,52 @@ app-skills {
   }
 
   .custom-button {
-    display:none;
+    position: relative;
+    display: inline-flex;
+    height: 40px; /* 12 * 0.25rem */
+    width: 170px;
+    max-width: 15rem; /* 60 * 0.25rem */
+    margin-top: 15px; /* 10 * 0.25rem */
+    overflow: hidden;
+    border-radius: 10px; 
+    padding: 1px;
+    outline: none;
+    border: 2px solid black; /* Transparent border */
   }
+  
+  .spinner {
+    position: absolute;
+    inset: -1000%;
+    animation: spin 2s linear infinite;
+    background: conic-gradient(from 90deg at 50% 50%, #000855 0%, #0533ff 50%, #000855 100%);
+  }
+  
+  .button-content {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 26); 
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    font-size: 11px; 
+    font-weight: 500;
+    color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    transform: translateZ(0);
+    gap: 1rem;
+    margin-left: 1px;
+    backdrop-filter: none; 
+    -webkit-backdrop-filter: none;
+}
 
-  .button-content{
-    display: none;
-  }
 
   .image-containerDownResume{
-    height: 40px;
-    width: 170px;
-    overflow: hidden; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px auto; 
-    text-align: center;
+    display: none;
   }
 
   .downloadResumeImg1{
@@ -544,7 +583,7 @@ app-skills {
   }
 
   .details{
-    margin-top: -50px;
+    margin-top: 5px;
   }
 
   .details1{
@@ -590,7 +629,7 @@ app-skills {
 
 }
 
-@media (min-width: 377px) and (max-width: 395px) {
+@media (min-width: 377px) and (max-width: 388px) {
   #particles-js {
     position: absolute;
     width: 109%;
@@ -633,7 +672,17 @@ app-skills {
 
   
   .custom-button {
-    display:none;
+    position: relative;
+    display: inline-flex;
+    height: 40px; /* 12 * 0.25rem */
+    width: 170px;
+    max-width: 15rem; /* 60 * 0.25rem */
+    margin-top: 19px; /* 10 * 0.25rem */
+    overflow: hidden;
+    border-radius: 10px; 
+    padding: 1px;
+    outline: none;
+    border: 2px solid black; /* Transparent border */
   }
 
   .button-content{
@@ -641,14 +690,7 @@ app-skills {
   }
 
   .image-containerDownResume{
-    height: 40px;
-    width: 170px;
-    overflow: hidden; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px auto; 
-    text-align: center;
+    display: none;
   }
 
   .downloadResumeImg1{
@@ -696,7 +738,170 @@ app-skills {
   }
 
   .details{
-    margin-top: -50px;
+    margin-top: 5px;
+  }
+
+  .details1{
+    color: white; 
+    font-size: 22px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-bottom: -50px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  .details2{
+    color: rgb(243, 185, 255); 
+    font-size: 22px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-top: 30px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 310px;
+    text-align: center;
+  }
+
+  .image-container2 {
+    height: 100px;
+    width: 100px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    transform: translateY(98%);
+  }
+  
+  .scrollimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+  }
+
+}
+
+@media (min-width: 389px) and (max-width: 395px){
+  #particles-js {
+    position: absolute;
+    width: 120%;
+    height: 105%;
+    background-color: #fff;
+    background-image: url('../../../../assets/phoneback.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    overflow-x: hidden !important;
+  }
+
+  .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    max-width: 700px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  app-skills {
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background color for better visibility */
+    margin-top: 886px;
+    margin-left: -8px;
+    background-size: cover;
+    width: 440px;
+  }
+
+
+  .nathi{
+    height: 200px;
+    width: 200px;
+  }
+
+  
+  .custom-button {
+    position: relative;
+    display: inline-flex;
+    height: 40px; /* 12 * 0.25rem */
+    width: 170px;
+    max-width: 15rem; /* 60 * 0.25rem */
+    margin-top: 19px; /* 10 * 0.25rem */
+    overflow: hidden;
+    border-radius: 10px; 
+    padding: 1px;
+    outline: none;
+    border: 2px solid black; /* Transparent border */
+  }
+
+  .button-content{
+    display: none;
+  }
+
+  .image-containerDownResume{
+    display: none;
+  }
+
+  .downloadResumeImg1{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .spinner {
+    position: absolute;
+    inset: -1000%;
+    animation: spin 2s linear infinite;
+    background: conic-gradient(from 90deg at 50% 50%, #000855 0%, #0533ff 50%, #000855 100%);
+  }
+  
+  .button-content {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; /* 8px */
+    background-color:rgb(0, 0, 26); /* slate-950 */
+    padding-left: 1.75rem; /* 7 * 0.25rem */
+    padding-right: 1.75rem; /* 7 * 0.25rem */
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
+    backdrop-filter: blur(3rem);
+    gap: 1rem; /* 2 * 0.25rem */
+    margin-left: 1px;
+    
+  }
+  
+
+  .yeezy {
+    width: 200px; /* Ensure the width is fixed */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Prevent overflow */
+    display: inline-block; /* Maintain block-level properties */
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .details{
+    margin-top: 5px;
   }
 
   .details1{
@@ -751,7 +956,7 @@ app-skills {
 }
 
 /* When the width for phone */
-@media (min-width: 396px) and (max-width: 412px) {
+@media (min-width: 396px) and (max-width: 411px) {
   #particles-js {
     position: absolute;
     width: 109%;
@@ -786,19 +991,8 @@ app-skills {
     width: 440px;
   }
 
-  .details{
-    margin-top: -50px;
-  }
-
   .image-containerDownResume{
-    height: 40px;
-    width: 170px;
-    overflow: hidden; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px auto; 
-    text-align: center;
+    display:none;
   }
 
   .downloadResumeImg1{
@@ -828,7 +1022,182 @@ app-skills {
   } */
 
   .custom-button {
-    display:none;
+    position: relative;
+    display: inline-flex;
+    height: 40px; /* 12 * 0.25rem */
+    width: 170px;
+    max-width: 15rem; /* 60 * 0.25rem */
+    margin-top: 15px; /* 10 * 0.25rem */
+    overflow: hidden;
+    border-radius: 10px; 
+    padding: 1px;
+    outline: none;
+    border: 2px solid black; /* Transparent border */
+  }
+  
+  .spinner {
+    position: absolute;
+    inset: -1000%;
+    animation: spin 2s linear infinite;
+    background: conic-gradient(from 90deg at 50% 50%, #000855 0%, #0533ff 50%, #000855 100%);
+  }
+  
+  .button-content {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 26); 
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    font-size: 11px; 
+    font-weight: 500;
+    color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    transform: translateZ(0);
+    gap: 1rem;
+    margin-left: 1px;
+    backdrop-filter: none; 
+    -webkit-backdrop-filter: none;
+}
+
+.details{
+  margin-top: 5px;
+}
+
+  .yeezy {
+    width: 200px; 
+    white-space: nowrap;
+    overflow: hidden; 
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .details1{
+    color: white; 
+    font-size: 22px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-bottom: -100px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  .details2{
+    color: rgb(243, 185, 255); 
+    font-size: 22px; 
+    font-family: Plus Jakarta Sans, sans-serif; 
+    margin-top: 0px; 
+    font-weight: bold; 
+    text-shadow: #000;
+  }
+
+  .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 310px;
+    text-align: center;
+  }
+
+  .image-container2 {
+    height: 100px;
+    width: 100px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px auto; /* This centers the div horizontally */
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 50px;
+    transform: translateY(98%);
+  }
+  
+  .scrollimg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+  }
+
+}
+
+/* iPhone 14 pro max and iPhone XR 412px - 430px*/
+@media (min-width: 412px) and (max-width: 430px) {
+  #particles-js {
+    position: absolute;
+    width: 109%;
+    height: 105%;
+    background-color: #fff;
+    background-image: url('../../../../assets/phoneback.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+    overflow-x: hidden !important;
+  }
+
+  .home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    max-width: 700px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  app-skills {
+    position: absolute;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional background color for better visibility */
+    margin-top: 950px;
+    margin-left: -8px;
+    background-size: cover;
+    width: 450px;
+  }
+
+  .details{
+    margin-top: -2px;
+  }
+
+  .image-containerDownResume{
+    display: none;
+  }
+
+  .downloadResumeImg1{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .nathi{
+    height: 200px;
+    width: 200px;
+  }
+
+  .custom-button {
+    position: relative;
+    display: inline-flex;
+    height: 40px; /* 12 * 0.25rem */
+    width: 170px;
+    max-width: 15rem; /* 60 * 0.25rem */
+    margin-top: 15px; /* 10 * 0.25rem */
+    overflow: hidden;
+    border-radius: 10px; 
+    padding: 1px;
+    outline: none;
+    border: 2px solid black; /* Transparent border */
   }
   
   .spinner {
@@ -918,6 +1287,10 @@ app-skills {
     width: 100%;
     height: 100%;
     margin-left: 5px;
+  }
+
+  .image-containerDownResume{
+    display: hide;
   }
 
 }
@@ -960,177 +1333,7 @@ app-skills {
 }
 
 
-/* iPhone 14 pro max and iPhone XR 430px - 414px*/
-@media (min-width: 413px) and (max-width: 430px) {
-  #particles-js {
-    position: absolute;
-    width: 109%;
-    height: 105%;
-    background-color: #fff;
-    background-image: url('../../../../assets/phoneback.png');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    margin-top: -10px;
-    overflow-x: hidden !important;
-  }
 
-  .home {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    max-width: 700px;
-    margin-left: 10px;
-    text-align: center;
-  }
-
-  app-skills {
-    position: absolute;
-    z-index: 0;
-    background-color: rgba(255, 255, 255, 0.8); /* Optional background color for better visibility */
-    margin-top: 940px;
-    margin-left: -8px;
-    background-size: cover;
-    width: 440px;
-  }
-
-  .details{
-    margin-top: -50px;
-  }
-
-  .image-containerDownResume{
-    height: 40px;
-    width: 170px;
-    overflow: hidden; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px auto; 
-    text-align: center;
-  }
-
-  .downloadResumeImg1{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-
-  .nathi{
-    height: 200px;
-    width: 200px;
-  }
-
-  /* .custom-button {
-    position: relative;
-    display: inline-flex;
-    height: 40px;
-    width: 170px;
-    max-width: 15rem; 
-    margin-top: 19px;
-    overflow: hidden;
-    border-radius: 10px; 
-    padding: 1px;
-    outline: none;
-    border: 2px solid black; 
-  } */
-
-  .custom-button {
-    display:none;
-  }
-  
-  .spinner {
-    position: absolute;
-    inset: -1000%;
-    animation: spin 2s linear infinite;
-    background: conic-gradient(from 90deg at 50% 50%, #000855 0%, #0533ff 50%, #000855 100%);
-  }
-  
-  .button-content {
-    display: inline-flex;
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: rgb(0, 0, 26); 
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-    font-size: 11px; 
-    font-weight: 500;
-    color: white;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    transform: translateZ(0);
-    gap: 1rem;
-    margin-left: 1px;
-    backdrop-filter: none; 
-    -webkit-backdrop-filter: none;
-}
-
-  .yeezy {
-    width: 200px; 
-    white-space: nowrap;
-    overflow: hidden; 
-    display: inline-block;
-    text-align: center;
-    justify-content: center;
-    margin-top: 40px;
-  }
-
-  .details1{
-    color: white; 
-    font-size: 22px; 
-    font-family: Plus Jakarta Sans, sans-serif; 
-    margin-bottom: -100px; 
-    font-weight: bold; 
-    text-shadow: #000;
-  }
-
-  .details2{
-    color: rgb(243, 185, 255); 
-    font-size: 22px; 
-    font-family: Plus Jakarta Sans, sans-serif; 
-    margin-top: 0px; 
-    font-weight: bold; 
-    text-shadow: #000;
-  }
-
-  .home {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    width: 310px;
-    text-align: center;
-  }
-
-  .image-container2 {
-    height: 100px;
-    width: 100px;
-    overflow: hidden; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2px auto; /* This centers the div horizontally */
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 50px;
-    transform: translateY(98%);
-  }
-  
-  .scrollimg {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    margin-left: 5px;
-  }
-
-}
 
 
 @media (min-width: 750px) and (max-width: 818px) {
