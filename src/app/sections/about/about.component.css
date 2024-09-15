@@ -401,7 +401,7 @@ body, html {
   }
 }
 
-@media (min-width: 376px) and (max-width: 412px) {
+@media (min-width: 377px) and (max-width: 411px) {
 
   .about {
     position: relative;
@@ -470,7 +470,7 @@ body, html {
   }
 }
 
-@media (min-width: 413px) and (max-width: 430px) {
+@media (min-width: 412px) and (max-width: 430px) {
 
   .about {
     position: relative;
