@@ -304,7 +304,7 @@ app-skills {
     width: 100vh;
     height: 105%;
     background-color: #fff;
-    background-image: url('../../../../assets/phoneback.png');
+    background-image: url('../../../../assets/phoneback.webp');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -464,7 +464,7 @@ app-skills {
     width: 100vh;
     height: 105%;
     background-color: #fff;
-    background-image: url('../../../../assets/phoneback.png');
+    background-image: url('../../../../assets/phoneback.webp');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -635,7 +635,7 @@ app-skills {
     width: 109%;
     height: 105%;
     background-color: #fff;
-    background-image: url('../../../../assets/phoneback.png');
+    background-image: url('../../../../assets/phoneback.webp');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -798,7 +798,7 @@ app-skills {
     width: 120%;
     height: 105%;
     background-color: #fff;
-    background-image: url('../../../../assets/phoneback.png');
+    background-image: url('../../../../assets/phoneback.webp');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -962,7 +962,7 @@ app-skills {
     width: 109%;
     height: 105%;
     background-color: #fff;
-    background-image: url('../../../../assets/phoneback.png');
+    background-image: url('../../../../assets/phoneback.webp');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -1137,7 +1137,7 @@ app-skills {
     width: 120%;
     height: 105%;
     background-color: #fff;
-    background-image: url('../../../../assets/phoneback.png');
+    background-image: url('../../../../assets/phoneback.webp');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -1297,7 +1297,7 @@ app-skills {
 
 @media (min-width: 819px) and (max-width: 900px) {
   #particles-js {
-    background-image: url('../../../../assets/tablet.png') !important;
+    background-image: url('../../../../assets/tablet.webp') !important;
   }
 
   app-skills {
@@ -1314,7 +1314,7 @@ app-skills {
 /* When the width for tablet */
 @media (min-width: 431px) and (max-width: 749px) {
   #particles-js {
-    background-image: url('../../../../assets/tablet.png');
+    background-image: url('../../../../assets/tablet.webp');
   }
 
   .nathi{
@@ -1337,7 +1337,7 @@ app-skills {
  
 
   #particles-js {
-    background-image: url('../../../../assets/tablet.png');
+    background-image: url('../../../../assets/tablet.webp');
   }
 
   app-skills {
@@ -1384,7 +1384,7 @@ app-skills {
 @media (min-height: 1200px) {
   /* Your CSS rules here */
   #particles-js {
-    background-image: url('../../../../assets/tablet.png');
+    background-image: url('../../../../assets/tablet.webp');
   }
 
   app-skills {
