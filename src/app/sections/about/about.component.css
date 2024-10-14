@@ -143,6 +143,11 @@ body, html {
 }
 
 @media (min-width: 340px) and (max-width: 365px){
+
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
+  }
   
   .about {
     position: relative;
@@ -273,6 +278,12 @@ body, html {
 
 @media (min-width: 366px) and (max-width: 376px) 
 {
+
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
+  }
+  
   .about {
     position: relative;
     width: 100vw;
@@ -413,6 +424,11 @@ body, html {
     overflow: hidden;
   }
 
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
+  }
+
   .heading{
     font-size: 30px;
     font-weight: bold;
@@ -471,6 +487,11 @@ body, html {
 }
 
 @media (min-width: 412px) and (max-width: 430px) {
+
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
+  }
 
   .about {
     position: relative;
@@ -540,6 +561,11 @@ body, html {
 }
 
 @media (min-width: 819px) and (max-width: 900px) {
+
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
+  }
   
   .about {
     position: relative;

@@ -312,6 +312,11 @@ app-skills {
     overflow-x: hidden !important;
   }
 
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
+  }
+
   .jobtitle{
     color: white; 
     font-size: 10px; 
@@ -470,6 +475,11 @@ app-skills {
     background-repeat: no-repeat;
     margin-top: -10px;
     overflow-x: hidden !important;
+  }
+
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
   }
 
   .custom-button {
@@ -643,6 +653,11 @@ app-skills {
     overflow-x: hidden !important;
   }
 
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
+  }
+
   .home {
     position: absolute;
     top: 50%;
@@ -804,6 +819,11 @@ app-skills {
     background-repeat: no-repeat;
     margin-top: -10px;
     overflow-x: hidden !important;
+  }
+
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
   }
 
   .home {
@@ -969,6 +989,12 @@ app-skills {
     margin-top: -10px;
     overflow-x: hidden !important;
   }
+
+  body {
+    overflow-x: hidden; /* This hides the horizontal scrollbar */
+    touch-action: pan-y;
+  }
+  
 
   .home {
     position: absolute;
@@ -1145,6 +1171,12 @@ app-skills {
     overflow-x: hidden !important;
   }
 
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
+  }
+  
+
   .home {
     position: absolute;
     top: 50%;
@@ -1160,7 +1192,7 @@ app-skills {
     position: absolute;
     z-index: 0;
     background-color: rgba(255, 255, 255, 0.8); /* Optional background color for better visibility */
-    margin-top: 940px;
+    margin-top: 880px;
     margin-left: -8px;
     background-size: cover;
     width: 450px;
@@ -1300,6 +1332,11 @@ app-skills {
     background-image: url('../../../../assets/tablet.webp') !important;
   }
 
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
+  }
+
   app-skills {
     position: absolute !important;
     z-index: 0 !important;
@@ -1316,6 +1353,12 @@ app-skills {
   #particles-js {
     background-image: url('../../../../assets/tablet.webp');
   }
+
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
+  }
+  
 
   .nathi{
     height: 140px;
@@ -1339,6 +1382,12 @@ app-skills {
   #particles-js {
     background-image: url('../../../../assets/tablet.webp');
   }
+
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
+  }
+  
 
   app-skills {
     position: absolute;
@@ -1386,6 +1435,12 @@ app-skills {
   #particles-js {
     background-image: url('../../../../assets/tablet.webp');
   }
+
+  body {
+    overflow-x: hidden; 
+    touch-action: pan-y;
+  }
+  
 
   app-skills {
     position: absolute;
